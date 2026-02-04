@@ -1,2 +1,2 @@
 # folha-do-protifolio
-Nada de Canva, Word ou qualquer outro aplicativo gráfico; meu portfólio em HTML e CSS está pronto para ser impresso.
+Página HTML formatada que exibe meu portfólio escrito e estilizado da qual eu pego o PDF do meu portifólio.
