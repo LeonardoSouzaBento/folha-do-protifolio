@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+
+/*prettier-ignore*/
+@layer components {
+/* 17.5px a 18.5px*/
+  body {
+  @apply text-[1.19rem];
+  }
+  .smaller-text {@apply text-xs;}
+
+  .small-text, label {@apply text-sm;}
+
+  .normal-text, li, input, select, option {@apply text-base;}
+
+  .large-text {@apply text-lg;}
+
+  h6 {@apply text-h6;}
+
+  h5 {@apply text-h5;}
+
+  h4 {@apply text-h4;}
+
+  h3 {@apply text-h3;}
+
+  h2 {@apply text-h2;}
+
+  h1 {@apply text-h1;}
+
+  .h1-hero {@apply text-h1-hero;}
+
+  button {@apply text-button;}
+
+  .small-button {@apply text-sm-button;}
+
+  .large-button {@apply text-lg-button;}
+
+  /* LARGURA MÁXIMA DO CORPO */ 
+  p { 
+    @apply max-w-[65ch] sm:max-w-[73ch] 
+    md:max-w-[75ch] lg:max-w-[78ch] xl:max-w-[82ch] 
+    2xl:max-w-[85ch]; 
+  }
+
+  /* PESOS */
+  input::placeholder,
+  .helper-text,
+  .description-text {
+    @apply font-normal; /* 400 */
+  }
+
+  p, li, input, select, option { @apply font-normal; }
+  a, h6, h5, h4 { @apply font-semibold; }
+  button, label { @apply font-semibold; }
+  h3, h2 { @apply font-bold; }
+  h1, strong { @apply font-extrabold; }
+
+/* LINE HEIGHTS */ 
+  h1 { @apply leading-[1.28]; }
+  h2 { @apply leading-[1.30]; }
+  h3 { @apply leading-[1.34]; }
+  h4 { @apply leading-[1.38]; }
+  h5 { @apply leading-[1.44]; }
+  h6 { @apply leading-normal; }
+
+  p, li, input, select, option { 
+    @apply leading-[1.52]; 
+  } 
+
+  label { @apply leading-[1.35];} 
+
+  button { 
+    @apply leading-[1.15]; 
+  } 
+
+  .large-text { @apply leading-[1.68]; } 
+  .normal-text { @apply leading-normal; } 
+  .small-text { @apply leading-[1.6]; } 
+  .smaller-text { @apply leading-normal; } 
+
+  .large-button { @apply leading-[1.20]; } 
+  .small-button { @apply leading-[1.10]; }
+
+/* Letter spacing */
+  h1, .h1-hero, h2, h3 { 
+    @apply tracking-tight; 
+  }
+}

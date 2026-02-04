@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+@import './typography.css';
+/*npx @tailwindcss/cli -i ./src/css/index.css -o ./src/css/tw-output.css --watch*/
+/* ---- VARIÁVEIS ---- */
+@theme {
+  --text-xs: 0.790123em;
+  --text-sm: 0.8889em;
+  --text-base: 1em;
+  --text-lg: 1.125em;
+  --text-h6: 1.125em;
+  --text-h5: 1.2656em;
+  --text-h4: 1.4238em;
+  --text-h3: 1.602em;
+  --text-h2: 1.802em;
+  --text-h1: 2.0273em;
+  --text-h1-hero: 2.28em;
+  --text-button: 0.943em;
+  --text-sm-button: 0.889em;
+  --text-lg-button: 1em;
+  --spacing-cap-offset: calc(1cap - ((1em - 1cap) / 2));
+  --spacing-ex-offset: calc(1ex - ((1em - 1cap) / 2));
+
+  /* cores */
+  --color-light-bg: #fff;
+  --color-medium-bg: hsl(357, 20%, 98%);
+  --color-dark-bg: hsl(357, 20%, 96.68%);
+  --color-card-foreground: hsl(222 15% 16.5%);
+  --color-muted-foreground: hsl(222 0% 28%);
+  --color-border: hsl(222 5% 81%);
+
+  /* sombras */
+  --shadow-xs: 0 1px 3px -1px hsla(330, 24%, 30%, 0.06);
+  --shadow-sm: 0 4px 8px -4px hsla(330, 23%, 30%, 0.11);
+  --shadow-lg: 0 8px 26px -6px hsla(330, 20%, 30%, 0.12);
+  --shadow-md: 0 6px 16px -5px hsla(330, 22%, 30%, 0.115);
+  --shadow-xl: 0 14px 38px -8px hsla(330, 18%, 30%, 0.14);
+}
+
+/* ---- RESETS E BARRA DE ROLAGEM ---- */
+@layer base {
+  @page {
+    size: A4;
+  }
+  * {
+    @apply [&>svg]:shrink-0;
+    cursor: default;
+    box-sizing: border-box;
+    border-color: var(--color-border);
+    outline-color: var(--color-border);
+    font-family: var(--font-default);
+    /* scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-200) !important;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  a,
+  button {
+    position: relative;
+    cursor: pointer;
+    @apply text-indigo-600;
+  }
+}
+
+@layer components {
+  body {
+    font-family: 'Roboto', sans-serif;
+    @apply w-[210mm] min-h-[297mm] mx-auto text-card-foreground leading-relaxed 
+    bg-linear-to-br from-light-bg to-dark-bg;
+  }
+  main {
+    @apply bg-light-bg -mt-1;
+  }
+  section {
+    @apply pt-3 pb-4 last:pb-0 border-b last:border-none;
+  }
+  header {
+    @apply pb-1 border-b;
+  }
+  h3 {
+    @apply mb-2;
+  }
+
+  /* contatos */
+  .contact-wrapper {
+    @apply mt-3 flex flex-wrap gap-x-4 gap-y-2 text-button;
+  }
+  .text-with-icon {
+    @apply flex items-center gap-1.5;
+  }
+  .info-wrapper {
+    @apply flex items-center gap-2;
+  }
+  .material-symbols-outlined {
+    @apply text-base!;
+    font-variation-settings:
+      'FILL' 1,
+      'wght' 600,
+      'GRAD' 0,
+      'opsz' 24;
+  }
+
+  /* conhecimentos */
+  .knowledge-container {
+    @apply flex justify-between;
+  }
+  .knowledge-wrapper {
+    @apply flex flex-col gap-1 [&>ul]:list-disc [&>ul]:list-inside [&>ul]:space-y-1;
+  }
+  .tags-wrapper {
+    @apply flex flex-col bg-medium-bg/50 p-4 pt-3 mb-2 rounded-xs
+    [&>ul]:list-disc [&>ul]:list-inside [&>ul]:space-y-1 [&_li]:text-muted-foreground;
+  }
+
+  /* experiência */
+  .works-container {
+    @apply grid grid-cols-2 gap-x-0 gap-y-3 relative;
+  }
+  .works-wrapper {
+    @apply [&_p:first-child]:font-medium [&>div>p]:text-muted-foreground [&>div>p]:text-sm;
+  }
+};
