@@ -76,20 +76,20 @@
 @layer components {
   body {
     font-family: 'Roboto', sans-serif;
-    @apply w-[210mm] min-h-[297mm] mx-auto text-card-foreground leading-relaxed 
+    @apply w-[210mm] max-h-[297mm] mx-auto text-card-foreground leading-relaxed 
     bg-linear-to-br from-light-bg to-dark-bg;
   }
   main {
     @apply bg-light-bg -mt-1;
   }
   section {
-    @apply pt-3 pb-4 last:pb-0 border-b last:border-none;
+    @apply pb-4 last:pb-0 border-b last:border-none;
   }
   header {
     @apply pb-1 border-b;
   }
   h3 {
-    @apply mb-2;
+    @apply mb-2 pt-ex-offset;
   }
 
   /* contatos */
@@ -116,7 +116,7 @@
     @apply size-full flex gap-4 items-start;
   }
   .knowledge-wrapper {
-    @apply w-full flex flex-col [&>ul]:list-disc [&>ul]:list-inside [&>ul]:space-y-1 [&>ul>li]:pb-px;
+    @apply w-full flex flex-col [&>ul]:list-disc [&>ul]:list-inside [&>ul]:space-y-1 [&>ul>li]:pb-px [&>ul>li]:last:pb-0;
   }
   .tags-wrapper {
     @apply bg-medium-bg/50 px-2 py-2.5 rounded-xs;
@@ -124,9 +124,9 @@
 
   /* experiência */
   .works-container {
-    @apply grid grid-cols-2 gap-x-0 gap-y-3 relative;
+    @apply pt-0.5 grid grid-cols-[1.1fr_1.5fr_1fr] gap-x-6 relative;
   }
   .works-wrapper {
-    @apply [&_p:first-child]:font-medium [&>div>p]:text-muted-foreground [&>div>p]:text-sm;
+    @apply flex flex-col gap-1 [&_p:first-child]:font-medium [&>div>p]:text-muted-foreground [&>div>p]:text-sm;
   }
 };
