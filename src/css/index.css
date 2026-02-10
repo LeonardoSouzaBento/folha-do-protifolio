@@ -113,14 +113,13 @@
 
   /* conhecimentos */
   .knowledge-container {
-    @apply flex justify-between;
+    @apply size-full flex gap-4 items-start;
   }
   .knowledge-wrapper {
-    @apply flex flex-col gap-1 [&>ul]:list-disc [&>ul]:list-inside [&>ul]:space-y-1;
+    @apply w-full flex flex-col [&>ul]:list-disc [&>ul]:list-inside [&>ul]:space-y-1 [&>ul>li]:pb-px;
   }
   .tags-wrapper {
-    @apply flex flex-col bg-medium-bg/50 p-4 pt-3 mb-2 rounded-xs
-    [&>ul]:list-disc [&>ul]:list-inside [&>ul]:space-y-1 [&_li]:text-muted-foreground;
+    @apply bg-medium-bg/50 px-2 py-2.5 rounded-xs;
   }
 
   /* experiência */
