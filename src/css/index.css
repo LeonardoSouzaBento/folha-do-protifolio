@@ -1,5 +1,5 @@
-@import 'tailwindcss';
-@import './typography.css';
+@import "tailwindcss";
+@import "./typography.css";
 /*npx @tailwindcss/cli -i ./src/css/index.css -o ./src/css/tw-output.css --watch*/
 /* ---- VARIÁVEIS ---- */
 @theme {
@@ -74,13 +74,18 @@
 }
 
 @layer components {
+  @media print {
+    .lang-buttons {
+      display: none;
+    }
+  }
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     @apply w-[210mm] max-h-[297mm] mx-auto text-card-foreground leading-relaxed 
     bg-linear-to-br from-light-bg to-dark-bg;
   }
   main {
-    @apply bg-light-bg -mt-1;
+    @apply bg-light-bg -mt-1 relative;
   }
   section {
     @apply pb-4 last:pb-0 border-b last:border-none;
@@ -105,10 +110,10 @@
   .material-symbols-outlined {
     @apply text-base!;
     font-variation-settings:
-      'FILL' 1,
-      'wght' 600,
-      'GRAD' 0,
-      'opsz' 24;
+      "FILL" 1,
+      "wght" 600,
+      "GRAD" 0,
+      "opsz" 24;
   }
 
   /* conhecimentos */
@@ -129,4 +134,4 @@
   .works-wrapper {
     @apply flex flex-col gap-1 [&_p:first-child]:font-medium [&>div>p]:text-muted-foreground [&>div>p]:text-sm;
   }
-};
+}

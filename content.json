@@ -1,0 +1,73 @@
+{
+  "pt": {
+    "role": "Desenvolvedor Front-End",
+    "summaryTitle": "Resumo",
+    "summaryText": "Desenvolvo aplicações front-end modernas, utilizando React, Next.js e TypeScript, com excelente organização de código, componentização reutilizável, estilização escalável e integração com APIs e bancos de dados. Tenho experiência em projetos como e-commerces, landing pages e aplicações utilitárias completas.",
+    "portfolioLink": "Abrir site do portfólio",
+
+    "contactsTitle": "Contatos",
+    "knowledgeTitle": "Conhecimentos",
+    "educationTitle": "Formação acadêmica",
+    "educationDegree": "Graduação em Engenharia de Software",
+    "educationText": "Desde março de 2023, venho cursando matérias essenciais, como Programação Front-End, Banco de Dados, Estrutura de Dados, Algoritmos e Lógica de Programação, entre outras.",
+
+    "experienceTitle": "Experiência profissional",
+    "futureInterestsTitle": "Interesses futuros:",
+    "futureInterestsText": "Especialização em back-end (Node.js e Java), desenvolvimento de aplicações SaaS, exploração de alternativas ao React e UnoCSS como alternativa ao Tailwind CSS.",
+    "company_label": "Empresa",
+    "period_label": "Período",
+    "exp1_role": "Pintor residencial",
+    "exp2_role": "Ajudante Geral e Trabalhador Rural",
+    "exp2_company": "Diversas (trabalho temporário)",
+    "exp3_role": "Ilustrador e Pintor de Fachadas Comerciais",
+    "exp3_company": "Autônomo"
+  },
+
+  "en": {
+    "role": "Front-End Developer",
+    "summaryTitle": "Summary",
+    "summaryText": "I develop modern front-end applications using React, Next.js, and TypeScript, with excellent code organization, reusable component architecture, scalable styling, and integration with APIs and databases. I have experience in projects such as e-commerce platforms, landing pages, and complete utility applications.",
+    "portfolioLink": "Open portfolio website",
+
+    "contactsTitle": "Contacts",
+    "knowledgeTitle": "Skills",
+    "educationTitle": "Education",
+    "educationDegree": "Bachelor’s Degree in Software Engineering",
+    "educationText": "Since March 2023, I have been studying essential subjects such as Front-End Programming, Databases, Data Structures, Algorithms, and Programming Logic, among others.",
+
+    "experienceTitle": "Professional Experience",
+    "futureInterestsTitle": "Future interests:",
+    "futureInterestsText": "Back-end specialization (Node.js and Java), SaaS application development, exploring alternatives to React, and UnoCSS as an alternative to Tailwind CSS.",
+    "company_label": "Company",
+    "period_label": "Period",
+    "exp1_role": "Residential Painter",
+    "exp2_role": "General Assistant and Farm Worker",
+    "exp2_company": "Various (temporary work)",
+    "exp3_role": "Illustrator and Commercial Facade Painter",
+    "exp3_company": "Freelancer"
+  },
+
+  "es": {
+    "role": "Desarrollador Front-End",
+    "summaryTitle": "Resumen",
+    "summaryText": "Desarrollo aplicaciones front-end modernas utilizando React, Next.js y TypeScript, con excelente organización del código, componentización reutilizable, estilos escalables e integración con APIs y bases de datos. Tengo experiencia en proyectos como comercios electrónicos, landing pages y aplicaciones utilitarias completas.",
+    "portfolioLink": "Abrir sitio del portafolio",
+
+    "contactsTitle": "Contactos",
+    "knowledgeTitle": "Conocimientos",
+    "educationTitle": "Formación académica",
+    "educationDegree": "Licenciatura en Ingeniería de Software",
+    "educationText": "Desde marzo de 2023, estudio materias esenciales como Programación Front-End, Bases de Datos, Estructuras de Datos, Algoritmos y Lógica de Programación, entre otras.",
+
+    "experienceTitle": "Experiencia profesional",
+    "futureInterestsTitle": "Intereses futuros:",
+    "futureInterestsText": "Especialización en back-end (Node.js y Java), desarrollo de aplicaciones SaaS, exploración de alternativas a React y UnoCSS como alternativa a Tailwind CSS.",
+    "company_label": "Empresa",
+    "period_label": "Período",
+    "exp1_role": "Pintor residencial",
+    "exp2_role": "Ayudante General y Trabajador Rural",
+    "exp2_company": "Diversas (trabajo temporal)",
+    "exp3_role": "Ilustrador y Pintor de Fachadas Comerciales",
+    "exp3_company": "Autónomo"
+  }
+}

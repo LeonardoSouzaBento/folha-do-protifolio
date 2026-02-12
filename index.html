@@ -1,146 +1,189 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leonardo Souza Bento - Currículo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./src/css/tw-output.css" />
+    <script src="./i18n.js" type="module"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Leonardo Souza Bento - Currículo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="./src/css/tw-output.css" />
-</head>
-
-<body>
-  <main>
-    <!-- Header, leading-[0.85] -->
-    <header>
-      <h1>Leonardo Souza Bento</h1>
-      <h4 class="text-muted-foreground">Desenvolvedor Front-End</h4>
-    </header>
-    <!-- Portifóio -->
-    <section>
-      <h3>Resumo</h3>
-      <p>Desenvolvo aplicações front-end modernas, utilizando React, Next.js e TypeScript, com excelente organização de
-        código, componentização reutilizável, estilização escalável e integração com APIs e bancos de dados. Tenho
-        experiência em projetos como e-commerces, landing pages e aplicações utilitárias completas.</p>
-      <a href="https://leonardobentodev.netlify.app/" target="_blank" class="text-button-lg">Abrir site do
-        portifólio</a>
-    </section>
-    <!-- Contatos -->
-    <section>
-      <h3 class="-mb-1!">Contatos</h3>
-      <div class="contact-wrapper">
-        <div class="info-wrapper">
-          <span class="material-symbols-outlined mb-0.5">
-            enterprise
-          </span>
-          <a class="text-with-icon" href="https://linkedin.com/in/leonardo-souza-bento-dev" target="_blank">
-            LinkedIn
-          </a>
-        </div>
-        <div class="info-wrapper">
-          <p>
-            <span class="material-symbols-outlined mt-0.5">
-              email
-            </span>
-          </p>
-          <a href="mailto:bentosouzaleonardo@gmail.com">bentosouzaleonardo@gmail.com</a>
-        </div>
-        <div class="info-wrapper">
-          <p class="text-with-icon">
-            <span class="material-symbols-outlined">
-              call
-            </span>
-          </p>
-          <a href="https://wa.me/5534984125832" target="_blank">(34) 98412-5832</a>
-        </div>
+  <body>
+    <main>
+      <div class="flex gap-2 absolute top-4 right-4 lang-buttons">
+        <button data-lang="pt" class="btn-lang">PT</button>
+        <button data-lang="en" class="btn-lang">EN</button>
+        <button data-lang="es" class="btn-lang">ES</button>
       </div>
-    </section>
-    <!-- Conhecimentos -->
-    <section class="pb-2.5">
-      <h3>Conhecimentos</h3>
-      <div class="knowledge-container">
-        <div class="knowledge-wrapper">
-          <ul>
-            <li>React, Next.js, JavaScript e TypeScript</li>
-            <li>CSS, Tailwind CSS e Styled Components</li>
-            <li>Shadcn UI</li>
-          </ul>
-          <ul>
-            <li>Node.js e Express (APIs REST)</li>
-            <li>Firebase (Authentication e Firestore)</li>
-            <li>Noções de Banco de Dados SQL</li>
-          </ul>
+      <!-- Header, leading-[0.85] -->
+      <header>
+        <h1>Leonardo Souza Bento</h1>
+        <h4 class="text-muted-foreground" data-i18n="role">
+          Desenvolvedor Front-End
+        </h4>
+      </header>
+      <!-- Portifóio -->
+      <section>
+        <h3 data-i18n="summaryTitle">Resumo</h3>
+        <p data-i18n="summaryText">
+          Desenvolvo aplicações front-end modernas, utilizando React, Next.js e
+          TypeScript, com excelente organização de código, componentização
+          reutilizável, estilização escalável e integração com APIs e bancos de
+          dados. Tenho experiência em projetos como e-commerces, landing pages e
+          aplicações utilitárias completas.
+        </p>
+        <a
+          data-i18n="portfolioLink"
+          href="https://leonardobentodev.netlify.app/"
+          target="_blank"
+          class="text-button-lg"
+          >Abrir site do portifólio</a
+        >
+      </section>
+      <!-- Contatos -->
+      <section>
+        <h3 class="-mb-1!" data-i18n="contactsTitle">Contatos</h3>
+        <div class="contact-wrapper">
+          <div class="info-wrapper">
+            <span class="material-symbols-outlined mb-0.5"> enterprise </span>
+            <a
+              class="text-with-icon"
+              href="https://linkedin.com/in/leonardo-souza-bento-dev"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p>
+              <span class="material-symbols-outlined mt-0.5"> email </span>
+            </p>
+            <a href="mailto:bentosouzaleonardo@gmail.com"
+              >bentosouzaleonardo@gmail.com</a
+            >
+          </div>
+          <div class="info-wrapper">
+            <p class="text-with-icon">
+              <span class="material-symbols-outlined"> call </span>
+            </p>
+            <a href="https://wa.me/5534984125832" target="_blank"
+              >(34) 98412-5832</a
+            >
+          </div>
         </div>
-        <div class="tags-wrapper smaller-text">
-          <ul class="flex flex-col list-disc gap-x-3 gap-y-0 list-inside space-y-1 
-          [&_li]:text-muted-foreground [&_li]:min-w-max [&_li]:marker:text-neutral-500">
-            <li>Git e GitHub</li>
-            <li>Commits semânticos</li>
-            <li>Axios</li>
-            <li>React Context API</li>
-            <li>React Router</li>
-            <li>React Hooks</li>
-            <div class="w-full flex gap-3">
-              <li>Noções de UI/UX</li>
-              <li>Design Systems</li>
+      </section>
+      <!-- Conhecimentos -->
+      <section class="pb-2.5">
+        <h3 data-i18n="knowledgeTitle">Conhecimentos</h3>
+        <div class="knowledge-container">
+          <div class="knowledge-wrapper">
+            <ul>
+              <li>React, Next.js, JavaScript e TypeScript</li>
+              <li>CSS, Tailwind CSS e Styled Components</li>
+              <li>Shadcn UI</li>
+            </ul>
+            <ul>
+              <li>Node.js e Express (APIs REST)</li>
+              <li>Firebase (Authentication e Firestore)</li>
+              <li>Noções de Banco de Dados SQL</li>
+            </ul>
+          </div>
+          <div class="tags-wrapper smaller-text">
+            <ul
+              class="flex flex-col list-disc gap-x-3 gap-y-0 list-inside space-y-1 [&_li]:text-muted-foreground [&_li]:min-w-max [&_li]:marker:text-neutral-500"
+            >
+              <li>Git e GitHub</li>
+              <li>Commits semânticos</li>
+              <li>Axios</li>
+              <li>React Context API</li>
+              <li>React Router</li>
+              <li>React Hooks</li>
+              <div class="w-full flex gap-3">
+                <li>Noções de UI/UX</li>
+                <li>Design Systems</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formação -->
+      <section>
+        <h3 data-i18n="educationTitle">Formação acadêmica</h3>
+
+        <div class="space-y-1 [&_p]:text-muted-foreground">
+          <h6 class="mb-2" data-i18n="educationDegree">
+            Graduação em Engenharia de Software
+          </h6>
+          <p data-i18n="educationText">
+            Desde <strong>março de 2023</strong>, venho cursando matérias
+            essenciais, como Programação Front-End, Banco de Dados, Estrutura de
+            Dados, Algoritmos e Lógica de Programação, entre outras.
+          </p>
+        </div>
+      </section>
+      <!-- Experiência -->
+      <section class="border-none">
+        <h3 data-i18n="experienceTitle">Experiência profissional</h3>
+
+        <div class="works-container">
+          <div class="works-wrapper">
+            <p data-i18n="exp1_role">Pintor residencial</p>
+            <div>
+              <p>
+                <span data-i18n="company_label">Empresa</span>: Prefeitura de
+                Frutal
+              </p>
+              <p><span data-i18n="period_label">Período</span>: 2024 – 2025</p>
             </div>
-          </ul>
+          </div>
+
+          <div class="works-wrapper">
+            <p data-i18n="exp2_role">Ajudante Geral e Trabalhador Rural</p>
+            <div>
+              <p>
+                <span data-i18n="company_label">Empresa</span>:
+                <span data-i18n="exp2_company"
+                  >Diversas (trabalho temporário)</span
+                >
+              </p>
+              <p><span data-i18n="period_label">Período</span>: 2023 – 2024</p>
+            </div>
+          </div>
+
+          <div class="works-wrapper">
+            <p data-i18n="exp3_role">
+              Ilustrador e Pintor de Fachadas Comerciais
+            </p>
+            <div>
+              <p>
+                <span data-i18n="company_label">Empresa</span>:
+                <span data-i18n="exp3_company">Autônomo</span>
+              </p>
+              <p><span data-i18n="period_label">Período</span>: 2020 – 2022</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Formação -->
-    <section>
-      <h3>Formação acadêmica</h3>
-
-      <div class="space-y-1 [&_p]:text-muted-foreground">
-        <h6 class="mb-2">Graduação em Engenharia de Software </h6>
-        <p>
-          Desde <strong>março de 2023</strong>, venho cursando matérias essenciais, como Programação Front-End, Banco de
-          Dados, Estrutura de Dados, Algoritmos e Lógica de Programação, entre outras.
+      </section>
+      <div class="text-muted-foreground bg-medium-bg/75 py-1">
+        <p class="small-text" data-i18n="futureInterestsTitle">
+          Interesses futuros:
+        </p>
+        <p class="smaller-text max-w-none" data-i18n="futureInterestsText">
+          Especialização em back-end (Node.js e Java), desenvolvimento de
+          aplicações SaaS, exploração de alternativas ao React e UnoCSS como
+          alternativa ao Tailwind CSS.
         </p>
       </div>
-    </section>
-    <!-- Experiência -->
-    <section class="border-none">
-      <h3>Experiência profissional</h3>
-
-      <div class="works-container">
-        <div class="works-wrapper">
-          <p>Pintor residencial</p>
-          <div>
-            <p>Empresa: Prefeitura de Frutal</p>
-            <p>Período: 2024 – 2025</p>
-          </div>
-        </div>
-        <div class="works-wrapper">
-          <p>
-            Ajudante Geral e Trabalhador Rural
-          </p>
-          <div>
-            <p>Empresa: Diversas (trabalho temporário)</p>
-            <p>Período: 2023 – 2024</p>
-          </div>
-        </div>
-        <div class="works-wrapper">
-          <p>
-            Ilustrador e Pintor de Fachadas Comerciais
-          </p>
-          <div>
-            <p>Empresa: Autônomo</p>
-            <p>Período: 2020 – 2022</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="text-muted-foreground bg-medium-bg/75 py-1">
-      <p class="small-text">Interesses futuros: </p>
-      <p class="smaller-text max-w-none">Especialização em back-end (Node.js e Java), desenvolvimento de aplicações SaaS, exploração de alternativas ao React e UnoCSS como alternativa ao Tailwind CSS.</p>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
